@@ -6,15 +6,17 @@
   </head>
   <body>
     <div class="container">
-      <h1>image info</h1>
+      <h1>Image Info</h1>
       <form>
-        <label for="imageInput">
-          Select an image
+        <label for="imageInput" class="custom-file-upload">
+          <i class="fas fa-cloud-upload-alt"></i> Choose an Image
           <input type="file" id="imageInput" accept="image/*">
         </label>
       </form>
-      <img id="imagePreview">
-      <p id="imageSize"></p>
+      <div class="image-container">
+        <img id="imagePreview" alt="Image Preview">
+        <p id="imageSize"></p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
